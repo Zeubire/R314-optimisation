@@ -2,7 +2,7 @@
   const start = performance.now();
   while (performance.now() - start < 2000) {}
   const waste = [];
-  for (let i=0;i<200000;i++) { waste.push(Math.random()*i); }
+  for (let i=0;i<2000;i++) { waste.push(Math.random()*i); }
   window.__waste = waste;
   window.addEventListener('load', function(){
     const imgs = document.querySelectorAll('.card img');
